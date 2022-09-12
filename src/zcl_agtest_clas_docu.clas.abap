@@ -11,7 +11,9 @@ CLASS zcl_agtest_clas_docu DEFINITION
 
     EVENTS test_event .
 
-    METHODS test_method .
+    METHODS test_method
+      IMPORTING
+        !test_param TYPE i .
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -21,6 +23,6 @@ ENDCLASS.
 CLASS zcl_agtest_clas_docu IMPLEMENTATION.
 
 
-  METHOD TEST_METHOD.
+  METHOD test_method.
   ENDMETHOD.
 ENDCLASS.
