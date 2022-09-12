@@ -4,6 +4,14 @@ CLASS zcl_agtest_clas_docu DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
+
+    TYPES test_type TYPE string .
+
+    DATA test_attribute TYPE string .
+
+    EVENTS test_event .
+
+    METHODS test_method .
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -11,4 +19,8 @@ ENDCLASS.
 
 
 CLASS zcl_agtest_clas_docu IMPLEMENTATION.
+
+
+  METHOD TEST_METHOD.
+  ENDMETHOD.
 ENDCLASS.
