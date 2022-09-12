@@ -9,7 +9,9 @@ CLASS zcl_agtest_clas_docu DEFINITION
 
     DATA test_attribute TYPE string .
 
-    EVENTS test_event .
+    EVENTS test_event
+      EXPORTING
+        VALUE(test_event_param) TYPE i .
 
     METHODS test_method
       IMPORTING
